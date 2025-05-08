@@ -1,0 +1,40 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vb;
+}
+.loading {
+	/* background-color: aqua; */
+	color: brown;
+	text-align: center;
+	max-width: 50%;
+	font-size: large;
+	font-weight: bold;
+}
+
+.loading__author {
+	font-weight: normal;
+	font-size: small;
+	color: black;
+	display: block;
+}
+
+.loading__animation {
+	width: 35px;
+	height: 35px;
+  display: inline-block;
+  border: 5px solid gray;
+  border-left-color: blue;
+  border-top-color: blue;
+  border-radius: 50%;
+  animation: rotate 600ms infinite linear;
+  
+}
+
+@keyframes rotate {
+  to{
+    transform:rotate(1turn) ;
+   }
+}
+
