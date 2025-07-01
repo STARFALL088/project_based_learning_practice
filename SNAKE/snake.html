@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas id="ground" width="200" height="200"></canvas>
+    <button id="Backward">&larr;</button>
+    <button id="Up">&uarr;</button>
+    <button id="Down">&darr;</button>
+    <button id="forward">&rarr;</button>
+    <button id="checking">checking</button>
+
+    <button id="clear">clear</button>
+    <div id="score">Score</div>
+    <style>
+      body {
+        background-image: url("https://discuss-cdn.kde.org/uploads/default/original/2X/4/4417587268416908060c791048b541358365d208.jpeg");
+      }
+
+      #forward {
+        position: relative;
+        top: 50%;
+        left: 50%;
+      }
+      #Backward {
+        position: relative;
+        top: 50%;
+        left: 50%;
+      }
+      #Down {
+        position: relative;
+        top: 50%;
+        left: 50%;
+      }
+      #Up {
+        position: relative;
+        top: 50%;
+        left: 50%;
+      }
+      #clear {
+        position: relative;
+        top: 50%;
+        left: 50%;
+      }
+      #ground {
+        position: relative;
+        top: 50%;
+        left: 40%;
+        border-style: double;
+        border-color: rgb(0, 0, 0);
+        border-width: 10px;
+
+        #score {
+          color: black;
+          size: 10px;
+        }
+      }
+    </style>
+    <script>
+      const canvas = document.getElementById("ground");
+      const ctx = canvas.getContext("2d");
+      ctx.fillStyle = "rgb(40, 113, 113)";
+      ctx.fillRect(0, 0, 200, 200);
+
+      let snake = [
+        { x: 10, y: 10 },
+        { x: 20, y: 10 },
+        { x: 30, y: 10 },
+        { x: 40, y: 10 },
+      ];
+
+      drawsnake();
+      document.getElementById("forward").addEventListener("click", moveForward);
+      document
+        .getElementById("Backward")
+        .addEventListener("click", moveBackward);
+      document.getElementById("Down").addEventListener("click", moveDown);
+      document.getElementById("clear").addEventListener("click", clearCanvas);
+      document.getElementById("Up").addEventListener("click", moveUp);
+      document.getElementById("checking").addEventListener("click", checking);
+      function move() {}
+
+      function drawsnake() {
+        for (const { x, y } of snake) {
+          ctx.fillStyle = "rgb(255, 255, 0)";
+          ctx.fillRect(x, y, 10, 10);
+          ctx.strokeStyle = "rgb(0, 0, 0)";
+          ctx.strokeRect(x, y, 10, 10);
+        }
+      }
+
+      function moveForward() {
+        for (let part of snake) {
+          part.x += 10;
+          //part.y += 10;
+        }
+        clearCanvas();
+        drawsnake();
+      }
+
+      function moveBackward() {
+        for (let part of snake) {
+          part.x -= 10;
+          //part.y += 10;
+        }
+        clearCanvas();
+        drawsnake();
+      }
+
+      function moveDown() {
+        for (let part of snake) {
+          part.y += 10;
+        }
+        clearCanvas();
+        drawsnake();
+      }
+      function moveUp() {
+        for (let part of snake) {
+          part.y -= 10;
+        }
+        clearCanvas();
+        drawsnake();
+      }
+
+      function clearCanvas() {
+        ctx.fillStyle = "rgb(40, 113, 113)";
+        ctx.fillRect(0, 0, 200, 200);
+      }
+
+      function checking() {
+        snake.pop();
+        clearCanvas();
+        drawsnake();
+      }
+    </script>
+  </body>
+</html>
