@@ -97,7 +97,6 @@
 .color-option {
   background-color: rgb(52, 52, 52);
   color: rgb(169, 167, 167);
-
   border-right-style: solid;
   border-left: transparent;
   border-top: transparent;
@@ -105,6 +104,9 @@
   border-right-color: rgb(74, 73, 73);
   border-bottom-left-radius: 4px;
   border-top-left-radius: 4px;
+  cursor: pointer;
+  height: 46.5px;
+  width: 46.5px;
 }
 .nav-searchiconbox {
   position: absolute;
@@ -154,15 +156,23 @@
   top: 4px;
   left: 1000px;
   border-radius: 3px;
-  height: 40px;
+  height: 45px;
   width: 40px;
   background-color: rgb(6, 5, 17);
+  color: #c0c0c0;
 }
-.country-logo {
-  background-image: url("america_flag.webp");
-  background-size: cover;
+/* .flag {
+  color: wheat;
+  background-color: transparent;
+  /* position: absolute;
   top: 0px;
-  left: 1px;
+  left: 0px;
+  width: 37.5px; 
+} */
+
+.nav-flag option {
+  background-color: rgb(6, 5, 17);
+  color: white;
 }
 
 .nav-language {
@@ -234,6 +244,7 @@
 
 .border:hover {
   border: 1px solid rgb(129, 121, 121);
+  cursor: pointer;
 }
 
 .panel {
@@ -436,20 +447,21 @@
 
 .back-to-top {
   position: absolute;
-  top: 1530px;
+  top: 1541px;
   left: 0px;
-  background-color: rgb(60, 60, 60);
+  background-color: transparent;
   width: 1356.6px;
   height: 50px;
   font-size: 15px;
   text-align: center;
   align-content: center;
   color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 
 .end-part {
   position: absolute;
-  top: 1585px;
+  top: 1590px;
   left: 0px;
   background-color: rgb(36, 36, 36);
   width: 1356.6px;
@@ -530,6 +542,7 @@
   height: 50px;
   left: 400px;
   border-radius: 3px;
+  cursor: pointer;
   top: 3px;
 }
 
@@ -543,8 +556,12 @@
   background-color: transparent;
   color: white;
   text-align: center;
+  cursor: pointer;
 }
-
+.lang option {
+  background-color: rgb(6, 5, 17);
+  color: white;
+}
 .currency {
   position: absolute;
   width: 150px;
@@ -555,6 +572,12 @@
   background-color: transparent;
   color: white;
   text-align: center;
+  cursor: pointer;
+}
+
+.currency option {
+  background-color: rgb(6, 5, 17);
+  color: white;
 }
 
 .country {
@@ -566,5 +589,24 @@
   top: 0px;
   background-color: transparent;
   color: white;
+  cursor: pointer;
   text-align: center;
+}
+
+.country option {
+  background-color: rgb(6, 5, 17);
+  color: white;
+}
+
+.under-line {
+  color: blue;
+}
+
+.button-effect {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.button-effect:active {
+  transform: scale(0.95);
 }

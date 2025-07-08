@@ -29,10 +29,14 @@
           <!-- <p class="nav-searchtext">Search Amazon</p> -->
           <select class="color-option">
             <option>ALL</option>
+            <option>Xbox</option>
+            <option>PC</option>
+            <option>Playsattion</option>
+            <option>Game</option>
           </select>
           <input placeholder="Search Amazon" class="nav-searchtext" />
           <div class="nav-searchiconbox">
-            <div class="nav-searchicon">
+            <div class="nav-searchicon button-effect">
               <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
             </div>
           </div>
@@ -44,10 +48,19 @@
           </div>
         </div>
 
-        <div class="nav-flag border">
-          <div class="country-logo">.</div>
+        <!-- <div class="nav-flag border">
+          <div class="country-logo">
+            <img src="america_flag.webp" width="37.5px" />
+          </div>
           <p class="nav-language">EN</p>
-        </div>
+        </div> -->
+
+        <select class="nav-flag border">
+          <option value="EN">🇺🇸 EN</option>
+          <option value="BD">🇧🇩 BD</option>
+          <option value="PK">🇵🇰 PK</option>
+          <option value="PS">🇵🇸 PL</option>
+        </select>
 
         <div class="nav-signin border">
           <p class="signin-label">Hello, sign in</p>
@@ -116,16 +129,14 @@
     <div class="signin-section">
       <div class="signinin">
         <p class="see-rec">See personalized recommendations</p>
-        <button class="signin-button border">Sign in</button>
+        <button class="signin-button border button-effect">Sign in</button>
         <p class="new-cus">
-          New coustiomer <a><u>sign here</u></a>
+          New coustomer <a><u>sign here</u></a>
         </p>
       </div>
     </div>
 
-    <div class="back-to-top">
-      <p>Back to top</p>
-    </div>
+    <button class="back-to-top button-effect">Back to top</button>
 
     <div class="end-part">
       <div class="get-to-know">
@@ -152,7 +163,7 @@
         <p><b>Make Money with Us</b></p>
         <p>Sell products on Amazon</p>
         <p>Sell on Amazon Business</p>
-        <p>Sell apps on Amazon/p></p>
+        <p>Sell apps on Amazon</p>
         <p>Become an Affiliate</p>
         <p>Advertise Your Products</p>
         <p>Self-Publish with Us</p>
@@ -180,15 +191,24 @@
     </div>
 
     <div class="the-end">
-      <div class="logo"></div>
+      <div class="logo border"></div>
       <select class="lang">
         <option value="English">English</option>
+        <option value="Bengali">Bengali</option>
+        <option value="Urdu">Urdu</option>
+        <option value="Arabic">Arabic</option>
       </select>
       <select class="currency">
-        <option valur="Doller">$USD - U.S. Dollar</option>
+        <option value="USD">🇺🇸 $USD - U.S. Dollar</option>
+        <option value="BDT">🇧🇩 ৳BDT - Bangladeshi Taka</option>
+        <option value="PKR">🇵🇰 ₨PKR - Pakistani Rupee</option>
+        <option value="JOD">🇵🇸 JOD - Jordanian Dinar</option>
       </select>
       <select class="country">
-        <option value="USA">United States</option>
+        <option value="USA">🇺🇸United States</option>
+        <option value="BD">🇧🇩Bangladesh</option>
+        <option value="PK">🇵🇰Pakistan</option>
+        <option value="PS">🇵🇸Palenstine</option>
       </select>
     </div>
   </body>
