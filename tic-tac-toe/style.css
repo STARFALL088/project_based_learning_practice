@@ -1,31 +1,3 @@
-* {
-  background-color: rgb(174, 255, 255);
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.area {
-  background-color: azure;
-  height: 318px;
-  width: 318px;
-  border: 2px black solid;
-  border-radius: 3px;
-}
-.box {
-  background-color: aqua;
-  height: 95px;
-  width: 95px;
-  border: 1px black solid;
-  border-radius: 2px;
-  display: flex;
-  font-size: 60px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-
 .play-again {
   position: absolute;
   top: 120px;
