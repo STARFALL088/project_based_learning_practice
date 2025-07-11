@@ -50,6 +50,9 @@ for (let i = 0; i < 9; i++) {
       document.getElementsByClassName("dash")[0].innerHTML += `It's A Draw!!`;
       freeze = 1;
     }
+    if (freeze == 1) {
+      document.getElementsByClassName("move")[0].innerHTML = "";
+    }
   });
 }
 // if(win()){
