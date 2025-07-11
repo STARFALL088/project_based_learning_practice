@@ -5,14 +5,15 @@
   background-image: url("OIP.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .area {
-  background-color: azure;
+  background-color: rgba(255, 255, 255, 0.95);
   height: 318px;
   width: 318px;
   border: 2px black solid;
-  border-radius: 3px;
+  border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,20 +21,30 @@
 }
 
 .box {
-  background-color: aqua;
+  background-color: #4a90e2;
   height: 95px;
   width: 95px;
-  border: 1px black solid;
+  /* border: 1px black solid; */
   border-radius: 50%;
   display: flex;
   font-size: 60px;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
-
+.box:hover {
+  background-color: #357abd;
+  transform: scale(1.05);
+}
 .rock,
 .paper,
 .scissors {
-  background-color: bisque;
+  /* background-color: rgb(20, 12, 12); */
+  color: bisque;
+  /* border: black 1px solid; */
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0, 3);
+  user-select: none;
+  stroke-width: background-;
   position: relative;
 }

@@ -1,3 +1,7 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  user-select: none;
+}
 .play-again {
   position: absolute;
   top: 120px;
