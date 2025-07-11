@@ -1,0 +1,106 @@
+* {
+  background-color: rgb(174, 255, 255);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.area {
+  background-color: azure;
+  height: 318px;
+  width: 318px;
+  border: 2px black solid;
+  border-radius: 3px;
+}
+.box {
+  background-color: aqua;
+  height: 95px;
+  width: 95px;
+  border: 1px black solid;
+  border-radius: 2px;
+  display: flex;
+  font-size: 60px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-again {
+  position: absolute;
+  top: 120px;
+  left: 500px;
+  height: 60px;
+  width: 200px;
+  color: rgb(86, 100, 142);
+  background-color: rgb(246, 247, 255);
+  font-size: 30px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  border: rgb(0, 208, 255) solid 1.5px;
+  justify-content: center;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.dash {
+  position: absolute;
+  top: 220px;
+  left: 500px;
+  height: 100px;
+  width: 200px;
+  color: rgb(75, 55, 55);
+  background-color: rgb(255, 255, 255);
+  font-size: 40px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  border: rgb(0, 208, 255) solid 1.5px;
+  justify-content: center;
+  border-radius: 3px;
+}
+.one {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.two {
+  position: absolute;
+  top: 10px;
+  left: 110px;
+}
+.three {
+  position: absolute;
+  top: 10px;
+  left: 210px;
+}
+.four {
+  position: absolute;
+  top: 110px;
+  left: 10px;
+}
+.five {
+  position: absolute;
+  top: 110px;
+  left: 110px;
+}
+.six {
+  position: absolute;
+  top: 110px;
+  left: 210px;
+}
+.seven {
+  position: absolute;
+  top: 210px;
+  left: 10px;
+}
+.eight {
+  position: absolute;
+  top: 210px;
+  left: 110px;
+}
+.nine {
+  position: absolute;
+  top: 210px;
+  left: 210px;
+}
