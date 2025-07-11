@@ -7,7 +7,7 @@ let pla = [
   {
     val: "O",
     col: "rgb(0, 115, 255)",
-    name: "talha",
+    name: "Talha",
   },
 ];
 let turn = pla[0];
@@ -19,6 +19,10 @@ document
   .addEventListener("click", function () {
     play_again();
   });
+
+document.getElementsByClassName(
+  "move"
+)[0].innerHTML = `${turn.name} To Move 🤔`;
 for (let i = 0; i < 9; i++) {
   let cur = document.getElementsByClassName("box")[i];
   cur.addEventListener("click", function () {
@@ -26,8 +30,12 @@ for (let i = 0; i < 9; i++) {
     if (cur.innerHTML.length == 0) {
       cur.innerHTML += turn.val;
       cur.setAttribute("style", `color: ${turn.col};`);
+
       last = turn;
       turn = pla[pla.indexOf(turn) ^ 1];
+      document.getElementsByClassName(
+        "move"
+      )[0].innerHTML = `${turn.name} To Move 🤔`;
       cnt++;
     }
 
@@ -40,6 +48,7 @@ for (let i = 0; i < 9; i++) {
     }
     if (cnt == 9 && freeze == 0) {
       document.getElementsByClassName("dash")[0].innerHTML += `It's A Draw!!`;
+      freeze = 1;
     }
   });
 }
@@ -84,10 +93,15 @@ function clear_board() {
   for (let i = 0; i < 9; i++) {
     let cur = document.getElementsByClassName("box")[i];
     cur.innerHTML = "";
+    cur.removeAttribute("style");
   }
+  cnt = 0;
 }
 
 function play_again() {
   clear_board();
   freeze = 0;
+  document.getElementsByClassName("dash")[0].innerHTML = ""; // Clear the message
+  turn = pla[0];
+  cnt = 0;
 }

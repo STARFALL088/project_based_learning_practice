@@ -104,3 +104,24 @@
   top: 210px;
   left: 210px;
 }
+
+.box:hover {
+  background-color: rgb(150, 230, 230);
+  cursor: pointer;
+}
+
+.play-again:hover {
+  background-color: rgb(185, 188, 209);
+  cursor: pointer;
+}
+
+.move {
+  position: absolute;
+  top: 380px;
+  left: 10px;
+  height: 100px;
+  width: 300px;
+  font-size: 30px;
+  color: rgb(75, 55, 55);
+  /* background-color: brown; */
+}
