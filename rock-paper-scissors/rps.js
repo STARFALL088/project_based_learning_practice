@@ -61,8 +61,10 @@ const score_view = () => {
 const reset = () => {
   user_score = 0;
   computer_score = 0;
+
   score_view();
   document.getElementsByClassName("report")[0].innerHTML = "PLAY A MOVE";
+  document.getElementsByClassName("choice")[0].innerHTML = "";
 };
 
 let cur = document.querySelector(".play-again");
