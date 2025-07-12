@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper Sissors</title>
+    <title>Rock Paper Scissors</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -11,15 +11,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="dash"></div>
-    <div class="move"></div>
-    <div class="play-again">Play Again</div>
+    <div class="dash">
+      <p class="user-score">Player: 0</p>
+      <p class="computer-score">Computer: 0</p>
+    </div>
+    <div class="choice"></div>
+    <div class="play-again">reset</div>
+    <div class="report">PLAY A MOVE</div>
     <div class="area">
       <div class="box rock"><i class="fas fa-hand-rock"></i></div>
       <div class="box paper"><i class="fas fa-hand-paper"></i></div>
       <div class="box scissors"><i class="fas fa-hand-scissors"></i></div>
-
-      <script src="rps.js"></script>
     </div>
+    <script src="rps.js"></script>
   </body>
 </html>
