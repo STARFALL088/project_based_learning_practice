@@ -45,6 +45,10 @@ const updateFlag = (ele) => {
 const UpdateExchangeRate = async () => {
   let amount = document.querySelector(".amount input");
   let amtVal = amount.value;
+  if (amtVal === "" || isNaN(amtVal)) {
+    amtVal = 1;
+    amount.value = 1;
+  }
 
   msg.innerText = "Getting exchange rate...";
   let fromVal = fromCurr.value.toLowerCase();
