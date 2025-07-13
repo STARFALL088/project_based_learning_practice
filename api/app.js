@@ -80,3 +80,6 @@ const swapCur = () => {
 };
 swapCur();
 action();
+window.addEventListener("load", () => {
+  UpdateExchangeRate();
+});
